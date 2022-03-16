@@ -1,0 +1,14 @@
+
+public class a {
+	void m1() {
+		System.out.println("Hii");
+	}
+	void m1() {
+		System.out.println("Hello");
+	}
+public static void main(String[] args) {
+	a obj = new a ();
+	obj.m1();
+	
+}
+}

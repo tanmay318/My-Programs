@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Basic Logic ex/src/ex10.java&apos; to &apos;Sumofdigits.java&apos;" description="Rename resource &apos;ex10.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ex10.java" name="Sumofdigits.java" stamp="1646110041486" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Basic Logic ex/src/Tableof5.java&apos; to &apos;Table.java&apos;" description="Rename resource &apos;Tableof5.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Tableof5.java" name="Table.java" stamp="1646465118844" updateReferences="true"/>
+</session>
