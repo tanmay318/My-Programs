@@ -3,6 +3,7 @@ public class Ex1 {
  void sum (int d, int e) 
  {
 	 System.out.println("Sum is:" +(d + e));
+	 
  }
  void sum (double a, double b)
  {
