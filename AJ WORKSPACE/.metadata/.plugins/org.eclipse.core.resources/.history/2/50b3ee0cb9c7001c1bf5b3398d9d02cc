@@ -1,0 +1,12 @@
+package com.project.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class questions {
+    @Id
+    int Qno;
+    String Question, option1, option2, option3, option4, Answer,Subject;
+}
+	

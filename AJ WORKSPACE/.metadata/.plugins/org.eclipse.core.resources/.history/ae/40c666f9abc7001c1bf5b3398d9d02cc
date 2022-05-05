@@ -1,0 +1,30 @@
+package com.project.OnlineExam;
+
+import java.util.List;
+
+import javax.persistence.Query;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class QuestionController {
+	@Autowired
+	SessionFactory factory;
+	
+	@RequestMapping("getQuestions")
+	 public void getQuestions (String Subject)
+	 {
+		System.out.println(Subject);
+		
+		Session session =factory.openSession();
+		Query query = session.createQuery("from questions where Subject =:Subject");
+		query.setParameter("Subject", Subject);
+		List<Questions> listofquestions = query.list();
+		
+	 }
+	
+}

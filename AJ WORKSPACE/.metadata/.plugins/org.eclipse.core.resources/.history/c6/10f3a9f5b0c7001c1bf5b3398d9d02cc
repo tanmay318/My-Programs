@@ -1,0 +1,25 @@
+
+<head>
+    <script>
+ 
+     function display(x)
+     {
+    	  var xmlhttp = new XMLHttpRequest ();
+    	  
+          xmlhttp.open("get","getquestions?Subject=" + x.value ,true);
+          
+    	   xmlhttp.send();
+     }
+    </script>
+</head>
+
+${message1}
+
+<body>
+   <select name ="selectedSubject" onchange = "display(this)" >
+     <option value ="GeneralKnowledge" >GeneralKnowledge</option>
+     <option value = "Maths"> Maths </option>
+   </select>
+   
+   <input type="submit">
+</body>

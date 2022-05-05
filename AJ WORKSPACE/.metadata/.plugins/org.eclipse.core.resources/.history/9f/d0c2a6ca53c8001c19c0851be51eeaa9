@@ -1,0 +1,29 @@
+
+<head>
+    <script>
+ 
+     function display(x)
+     {
+    	  var xmlhttp = new XMLHttpRequest ();
+    	  
+          xmlhttp.open("get","getquestions?Subject=" + x.value ,true);
+          
+    	   xmlhttp.send();
+     }
+    </script>
+</head>
+
+${message1}
+
+<body>
+<form>
+		<select name="selectedSubject" onchange="display(this)">
+			<option value="actionNoRequired"> Select Subject  </option>
+			<option value="General Knowledge"> General Knowledge  </option>
+			<option value="maths"> Maths </option>
+		</select>
+		<input type=submit value="startExam" formaction="startExam">
+	</form>
+   
+  
+</body>

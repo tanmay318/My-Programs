@@ -1,0 +1,19 @@
+<form name="questionForm">
+
+	<input  style="border:none" type="text" name="qno" value="${question.qno}"><br><br>
+	
+	<textarea  rows=4 cols=50 name="question"> ${question.question} </textarea><br><br>
+		
+	<input  type="radio" name="option" value=${question.option1} > <span> ${question.option1} </span><br><br>
+	
+	<input  type="radio" name="option" value=${question.option2}>  <span> ${question.option2} </span> <br><br>
+		
+	<input  type="radio" name="option" value=${question.option3}> <span> ${question.option3} </span> <br><br>
+	
+	<input  type="radio" name="option" value=${question.option4}> <span> ${question.option4} </span> <br><br>
+		
+	<input type="submit" value="next" formaction="next">
+	<input type="submit" value="previous" formaction="previous">
+	<input type="submit" value="end exam" formaction="endexam">
+
+</form>

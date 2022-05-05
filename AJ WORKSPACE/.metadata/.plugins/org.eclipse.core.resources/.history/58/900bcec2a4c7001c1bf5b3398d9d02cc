@@ -1,0 +1,15 @@
+package com.project.OnlineExam;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class QuestionController {
+      
+	@RequestMapping("getQuestions")
+	 public String getQuestions (String subject)
+	 {
+		return "login";
+	 }
+	
+}
